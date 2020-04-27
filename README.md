@@ -12,8 +12,8 @@
 ### Files:
   1. **data_clean.py**
   2. **counts_cm_ic.py**
-  3. **period_cand_ACS_dataset.py**
-  4. **D. period_cand_ACS_dataset.py**
+  3. **counts_ic.py**
+  4. **period_cand_ACS_dataset.py**
   5. **ic_state.qgz**
   6. **income_>c_analysis.py**
 
