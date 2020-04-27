@@ -1,44 +1,45 @@
 1. committees who support or oppose Trump or Hillary
 
-oppose
-TRUMP, DONALD J. / MICHAEL R. PENCE                147
-CLINTON, HILLARY RODHAM / TIMOTHY MICHAEL KAINE     86
+<br>oppose<br>
+<br>TRUMP, DONALD J. / MICHAEL R. PENCE                147<br>
+<br>CLINTON, HILLARY RODHAM / TIMOTHY MICHAEL KAINE     86<br>
 
-support
-CLINTON, HILLARY RODHAM / TIMOTHY MICHAEL KAINE    154
-TRUMP, DONALD J. / MICHAEL R. PENCE                 83
+<br>support<br>
+<br>CLINTON, HILLARY RODHAM / TIMOTHY MICHAEL KAINE    154<br>
+<br>TRUMP, DONALD J. / MICHAEL R. PENCE                 83<br>
 
-Hillary seems to get more support from committees.
+<br>Hillary seems to get more support from committees.
 
 2. the contributions by committees to Trump or Hillary
-oppose
-clinton: 52343900.55
-  trump: 38831849.95
-support
-clinton: 287073275.87
-  trump: 193056189.24
+<br>oppose
+<br>clinton: 52343900.55
+<br>  trump: 38831849.95
+<br>support
+<br>clinton: 287073275.87
+<br>trump: 193056189.24
 
-It seems from the contributions of both opposing and supporying, Hillary receives more.
-Both Hillary and Trump get opposed more than supported. In other words, committees tends to contributes money to oppose a candidate.
+<br>It seems from the contributions of both opposing and supporying, Hillary receives more.
+<br>Both Hillary and Trump get opposed more than supported. In other words, committees tends to contributes money to oppose a candidate.
 
 3.15 largest committees contributing to Hillary and Trump:
-Primary_Oppose_Trump
-DCCC                                                                                  219427
-DSCC                                                                                   58545
-CHC BOLD PAC                                                                            8541
-AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E                  6742
-RIGHT TO RISE USA                                                                       6441
-MOVEON.ORG POLITICAL ACTION                                                             4499
-HOUSE MAJORITY PAC                                                                      3797
-SENATE MAJORITY PAC                                                                     2580
-PROGRESSIVE CHANGE CAMPAIGN COMMITTEE                                                   2370
-CONNECTICUT DEMOCRATIC STATE CENTRAL COMMITTEE                                          1099
-IOWA DEMOCRATIC PARTY                                                                    722
-ALASKA DEMOCRATIC PARTY                                                                  576
-SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)       534
-UNITE HERE TIP CAMPAIGN COMMITTEE                                                        493
-HUMAN RIGHTS CAMPAIGN EQUALITY VOTES                                                     473
-590729113.0
+
+<br>Primary_Oppose_Trump
+<br>DCCC                                                                                  219427
+<br>DSCC                                                                                   58545
+<br>CHC BOLD PAC                                                                            8541
+<br>AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E                  6742
+<br>RIGHT TO RISE USA                                                                       6441
+<br>MOVEON.ORG POLITICAL ACTION                                                             4499
+<br>HOUSE MAJORITY PAC                                                                      3797
+<br>SENATE MAJORITY PAC                                                                     2580
+<br>PROGRESSIVE CHANGE CAMPAIGN COMMITTEE                                                   2370
+<br>CONNECTICUT DEMOCRATIC STATE CENTRAL COMMITTEE                                          1099
+<br>IOWA DEMOCRATIC PARTY                                                                    722
+<br>ALASKA DEMOCRATIC PARTY                                                                  576
+<br>SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)       534
+<br>UNITE HERE TIP CAMPAIGN COMMITTEE                                                        493
+<br>HUMAN RIGHTS CAMPAIGN EQUALITY VOTES                                                     473
+<br>590729113.0
 
 conP_O_Hillary.png
 REPUBLICAN NATIONAL COMMITTEE                                                                77230
