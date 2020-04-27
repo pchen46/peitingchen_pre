@@ -173,7 +173,7 @@
         'H'=('Hillary_conG_O'/'Hillary_conG_S')/('Hillary_conP_O'/'Hillary_conP_S])
         'T'=('Trump_conG_O'/'Trump_conG_S')/('Trump_conP_O'/'Trump_conP_S])
         'H/T'='H'/'T'
-    11. save it to the 'results.csv'
+    11. save it to the 'results.csv'.
 
 
     **E. ic_state.qgz**
