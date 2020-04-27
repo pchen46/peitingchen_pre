@@ -117,14 +117,12 @@
                 apply  `unstack()` to get new dataframe gg3.
 
             10)print the results.
-
     4. create 4 new dataframe on different period and different conditions on 'support or oppose'
 
             1) set `conP` to 'contrib[Pri]'
                set `conG` to 'contrib[Gen]'
 
             2) merge `conP`(and `conG`) with `com_S` and `com_O` to get 4 new dataframe `conG_S`,`conP_S`,`conG_O`,`conP_O`.
-
     5. anlaysis
 
             1) create 3 lists for the following for-loops:
@@ -152,17 +150,14 @@
 
                 c)get the total amount of individual donations
                 apply `sum()` to 'v[v['cand_id']==t]['transaction_amt']' and call `print()` method to print it.
-
     6.  get grouped dataset by stages and conditions(support or oppose)
             input: 'v2'
             method: `for-loop`: `groupby()`, `sum()`, `unstack()`
             output: 'ttempt2', a 4-size list with 2 colomns of contributions to Hillary and Trump, the index is state.
-
     7.   get summary dataset by stages and conditions(support or oppose)
             input: 'ttempt2','po'(gotten by read 'pocodes.csv')
             method: `merge()`,`copy()`,`drop()`
             output: 'po'
-            
     8. save the 'po' dataset by call `.to_csv()` with argument 'by_state_cand.csv'.
 
     **D. period_cand_ACS_dataset.py**
