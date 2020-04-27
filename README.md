@@ -20,7 +20,7 @@
 ###Instructions:
   **A. data_clean.py**
   1. Import packages:
-          pandas, numpy
+          pandas
   2. Read 'individual_contribution.csv':
           set 'contrib' to the result of calling `pd.read_csv()`
           3. drop some colomns:
@@ -160,9 +160,9 @@
           output: 'results'
     7. rename the colomns and save the 'results' to 'census_by_state.csv'.
     8. read 'by_state_cand.csv' and set it to 'y1'.
-    9. merge 'y1' and 'results' and get the final 'merge'
+    9. merge 'y1' and 'results' and get the final 'merge1'
     10. calculate columns in 'merge':
-        'income' : 'income' dividing 'total_pop';
+        'income' : 'income';
         '>c' :('Bachelor Degree'+'Graduate Degree')/'total_pop'
         'H/T_GO'='Hillary_conG_O'/'Trump_conG_O'
         'H/T_GS'='Hillary_conG_S'/'Trump_conG_S'
