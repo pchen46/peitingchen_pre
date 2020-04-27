@@ -42,9 +42,9 @@ results.rename(newnames,axis='columns',inplace=True)
 results.to_csv('census_by_state.csv')
 
 #merge with 'by_state_cand.csv'
-y1=pd.read_csv('by_zip_cand.csv',dtype=str)
-y1[['income','total_pop','white_pop','black_pop','Bachelor Degree','Graduate Degree']]=y1[['income','total_pop','white_pop','black_pop','Bachelor Degree','Graduate Degree']].astype(float)
-merge1=y1.merge(results,how='left',validate='m:1',on="zip_code")
+y1=pd.read_csv('by_state_cand.csv',dtype=str)
+results[['income','total_pop','white_pop','black_pop','Bachelor Degree','Graduate Degree']]=results[['income','total_pop','white_pop','black_pop','Bachelor Degree','Graduate Degree']].astype(float)
+merge1=y1.merge(results,how='left',validate='m:1',left_on="Name",right_on='NAME')
 
 merge1[['Hillary_conP_S',
        'Trump_conP_S', 'Hillary_conG_S', 'Trump_conG_S', 'Hillary_conP_S.1',
