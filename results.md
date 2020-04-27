@@ -1,4 +1,4 @@
-1.committees who support or oppose Trump or Hillary
+1. committees who support or oppose Trump or Hillary
 
 oppose
 TRUMP, DONALD J. / MICHAEL R. PENCE                147
@@ -261,25 +261,25 @@ WV     14.914123
 OK     15.127620
 MO     15.598397
 
-6.people supporting trump tends to contribute less than people who supports Hillary, in General Election
-7.when population over 25 have more than 50% education above college, the state will suddenly contributes more in opposing Trump.
+6. people supporting trump tends to contribute less than people who supports Hillary, in General Election
+7. when population over 25 have more than 50% education above college, the state will suddenly contributes more in opposing Trump.
 8.
 if we have 4 levels in incomes among states.(1 is the top and 4 is the bottom)
 2,3,4 level opposes Hillary more.
 1 level opposes Trump more.
 1 level does not oppose Hillary at all.
-9.in the beginning, there is a correlation between income of a states and supporting ratio for Hillary.
+9. in the beginning, there is a correlation between income of a states and supporting ratio for Hillary.
 However, in the end, there is no tendency and correlation between income and supporting whether Hillary or Trump.
 
-10.Hillary receives higher extend in being opposed, with e^2 than Turmp in the most extreme  least welcomed states.
+10. Hillary receives higher extend in being opposed, with e^2 than Turmp in the most extreme  least welcomed states.
 
-11.As the rate of education above college decreases in a state, people tends to oppose Hillary more in both general and primary Election.
+11. As the rate of education above college decreases in a state, people tends to oppose Hillary more in both general and primary Election.
 
 12. people choose the side of Hillary when they are in states with the middle rates of advanced education.
 
-13.people in states with middle incomes tends to choose the side of Trump.
+13. people in states with middle incomes tends to choose the side of Trump.
 
-14.in the primary Election as the rates of advanced education decrease, people tends to choose Hillary.However, it changed.
+14. in the primary Election as the rates of advanced education decrease, people tends to choose Hillary.However, it changed.
 in the primary Election as the income decrease, people tends to choose Hillary.However, it changed.
 for Trump, both income and rate of education has no correlation in both period.
 
