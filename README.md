@@ -71,9 +71,9 @@
               apply `sum()` to 'com[v&clinton]' and call `print()` method to print it.
               apply `sum()` to 'com[v&trump]' and call `print()` method to print it.
           2)plot the results to barplot:
-          apply  `plt.figure(dpi=300,figsize=(10,8))` and  `sns.barplot()` with arguments of `hue='candidate_name',y='total',data=com,x='support_oppose_indicator',estimator=sum`
+          apply  `plt.figure(dpi=300,figsize=(10,8))` and  `sns.barplot()` with arguments of `hue='candidate_name',y='total',data=com,x='support_oppose_indicator',estimator=sum`.
 
-    **C. counts_ic.py**     
+  **C. counts_ic.py**     
   1. Import packages:
           pands, numpy, seaborn, matplotlib.pyplot
   2. Read 'contrib.pkl':set 'contrib' to the result of calling `pd.read_pickle()`
