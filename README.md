@@ -34,21 +34,29 @@
           6. simplify the contents in fields:
                   apply the `str.replace()` to 'com['candidate_name']' with 'Hillary' and 'Trump'.
   7. remove the duplicated rows on ('CMTE_ID','support_oppose_indicator') and aggregate its values on ('total' and 'count'):
+
           1)set 'obj' to 'com['support_oppose_indicator']=='O'' ,
             set 'sup' to 'com['support_oppose_indicator']=='S''
             set 'com_O' to 'com[obj]' and set com_S to 'com[sup]'
+
           2)set `groupby()` with 'cmte_id' and apply `agg()` with argument of '{'total':sum,'count':sum}' to get new dataframe 'com_O1' and 'com_S1'.
+
           3)set 'com_O' to `com_O.merge()`with arguments of 'com_O1' and'on='cmte_id',how='left'', as well as 'com_S'.
+
           4)remove the duplicated rows
             set 'com_O' to '~com_O['cmte_id'].duplicated()]' as well as 'com_S'.
+
           5) get new 'com' variable:
             set 'com' by calling `pd.concat()` to joint 'com_O' and 'com_S'.
             apply `reset_index()`.
+
           6)modify the columns:
             apply `drop()` to drop the column of 'total_x' and '-merge'.
             apply `rename()` to rename the column of 'total_y' with 'total'
+
   8. save dataset:
           1) call `.to_pickle()` method to save 'contrib.pkl'
+
           2) call `.to_csv()` method to save 'com.csv'
 
    **B. counts_cm.py**     
@@ -56,20 +64,25 @@
           pands, numpy, seaborn, matplotlib.pyplot
   2. Read 'com.csv':set 'com' to the result of calling `pd.read_csv()`
   3. Count the number of committees supporting or opposing Trump and Clinton:
+
           1)set 'obj' to 'com['support_oppose_indicator']=='O''
             set 'sup' to 'com['support_oppose_indicator']=='S''
             set 'clinton' to 'clinton = 'com['cand_id']=='P00003392''
             set 'trump' to 'com['cand_id']=='P80001571''
+
           2)count the number:
           Create a for-loop over `[obj,sup]` using `v` as the running variabl:
               apply `value_counts()` to 'com[v]['candidate_name']' and apply `print()` to them.
+
           3)plot the results to barplot:
           apply  `plt.figure(dpi=300,figsize=(10,8))` and  `sns.catplot()` with arguments of `x='candidate_name',kind='count',data=com,hue='support_oppose_indicator'`
   4. Count the total investment values of committees to support or oppose Trump and Clinton:
+
           1)count the number:
           Create a for-loop over `[obj,sup]` using `v` as the running variabl:
               apply `sum()` to 'com[v&clinton]' and call `print()` method to print it.
               apply `sum()` to 'com[v&trump]' and call `print()` method to print it.
+              
           2)plot the results to barplot:
           apply  `plt.figure(dpi=300,figsize=(10,8))` and  `sns.barplot()` with arguments of `hue='candidate_name',y='total',data=com,x='support_oppose_indicator',estimator=sum`.
 
