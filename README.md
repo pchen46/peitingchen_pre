@@ -78,35 +78,35 @@
           pands, numpy, seaborn, matplotlib.pyplot
   2. Read 'contrib.pkl':set 'contrib' to the result of calling `pd.read_pickle()`
      Read 'com.csv': set 'com' to the result of calling `pd.read_csv()`, and get com_O and com_S as above.
-  3. Count individual contributions in the primary/General period
+  3. Count individual contributions in the primary/General period\n
             1)set 'Pri' to 'contrib['transaction_pgi']=='P''
-              set 'Gen' to 'contrib['transaction_pgi']=='G''
-            2)set 'cPG' to 'contrib[Pri|Gen]'
+              set 'Gen' to 'contrib['transaction_pgi']=='G''\n
+            2)set 'cPG' to 'contrib[Pri|Gen]'\n
             3)merge the 'cPG' and com_O/com_S
               set 'cPG' to `cPG.merge()`with arguments of 'com_O' and'on='cmte_id',how='left''.
               apply the `drop()` to 'cPG' with arguments:'['candidate_id', 'committee_id','candidate_name', 'committee_name']'.
-              set 'cPG' to `cPG.merge()`with arguments of 'com_S' and'on='cmte_id',how='left''.
+              set 'cPG' to `cPG.merge()`with arguments of 'com_S' and'on='cmte_id',how='left''.\n
             4)filter data where individual contributes to the Hillary and Trump related committees:
                 set 'merO' to 'cPG['-merge']=='both'' ,
                 set 'merS' to 'cPG['mergeS']=='both''
-                set 'cPG' to 'cPG[merO|merS]'
+                set 'cPG' to 'cPG[merO|merS]'\n
             5) set more conditions:
                 set 's1' to 'merO'
                 set 's2' to 'merS'
                 set 's3' to 'cPG['candidate_name']=='Trump''
                 set 's4' to 'cPG['candidate_name']=='Hillary''
                 set s5 to 'cPG['transaction_pgi']=='P''
-                set s6 to 'cPG['transaction_pgi']=='G''
+                set s6 to 'cPG['transaction_pgi']=='G''\n
             6) set a colomn named 'side' and know where the contributions goes, the values are 'T'-'support Trump', 'H'-'oppose Hillary','B_T'-'support and oppose Trump','B_H'-'support and oppose Hillary':
               Set 'cPG['side']' to'N'.
-              In the sequence, apply`loc()` with argument conditions and the colomn name 'side'
-            7) remove the rows where the values of 'side' is 'N'
-            8) apply `value_counts()` to 'cPG['side']'
+              In the sequence, apply`loc()` with argument conditions and the colomn name 'side'\n
+            7) remove the rows where the values of 'side' is 'N'\n
+            8) apply `value_counts()` to 'cPG['side']'\n
             9)count the sum values of individual conributions by Primary/General period:
                 apply`astype(float)` on 'transaction_amt' column and  `groupby()` by '['side','transaction_pgi']' , getting dataframe gg.
                 apply `sum()` with argument of 'transaction_amt' and get dataframe gg2.
-                apply  `unstack()` to get new dataframe gg3.
-            10)print the results.
+                apply  `unstack()` to get new dataframe gg3.\n
+            10)print the results.\n
     4. create 4 new dataframe on different period and different conditions on 'support or oppose'
             1) set `conP` to 'contrib[Pri]'
                set `conG` to 'contrib[Gen]'
@@ -115,23 +115,23 @@
             1) create 3 lists for the following for-loops:
                 set 'v2' to '[conG_S,conP_S,conG_O,conP_O]'
                 set 'v3' to '['P00003392','P80001571']'
-                set 'v4' to '['conG_S','conP_S','conG_O','conP_O']'
+                set 'v4' to '['conG_S','conP_S','conG_O','conP_O']'\n
             2) create a 'v41' list for the names of pictures:
                Create a for-loop over `range(0,4)` using `i` as the running variabl:
                Create a for-loop over `range(0,2)` using `s` as the running variabl:
-                apply `append()` with argument of 'v4[i]+v3[s]+'.png'' to 'v41'.
+                apply `append()` with argument of 'v4[i]+v3[s]+'.png'' to 'v41'.\n
             3)anlaysis and plot:
                 set 'l' to 0,
                 Create a for-loop over `v2` using `v` as the running variabl:
                 Create a for-loop over `v3` using `t` as the running variabl:
                 set `p` to `plt.figure()`
-                print the name of `v41[l]`
+                print the name of `v41[l]`\n
                 a)count the 15 committees with the largest number of individual contributions:
-                apply `value_counts()` to 'v[v['cand_id']==t]['committee_name']' , set it to `m` and apply `print()` it.
+                apply `value_counts()` to 'v[v['cand_id']==t]['committee_name']' , set it to `m` and apply `print()` it.\n
                 b)plot the barplot of the results and save it
                 apply `sns.barplot()` with arguments of `y = m.index,x=m`, `get.figure()` and `savefig` with argument of 'v41[l]'.
-                c)get the total amount of individual donations
-                apply `sum()` to 'v[v['cand_id']==t]['transaction_amt']' and call `print()` method to print it.
+                c)get the total amount of individual donations\n
+                apply `sum()` to 'v[v['cand_id']==t]['transaction_amt']' and call `print()` method to print it.\n
     6.  get grouped dataset by stages and conditions(support or oppose)
             input: 'v2'
             method: `for-loop`: `groupby()`, `sum()`, `unstack()`
