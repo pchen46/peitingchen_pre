@@ -14,7 +14,7 @@
   2. **counts_cm_ic.py**
   3. **period_cand_ACS_dataset.py**
   4. **D. period_cand_ACS_dataset.py**
-  5. **ic_state.gpcg**
+  5. **ic_state.qgz**
   6. **income_>c_analysis.py**
 
 ###Instructions:
@@ -176,7 +176,7 @@
     11. save it to the 'results.csv'
 
 
-    **E. ic_state.gpcg**
+    **E. ic_state.qgz**
     1. add the layor of 'tl_2016_us_state.zip' and choose the 'shp' one.
     2. add the deliminated text layor of 'results.csv'
     3. join them on state 'Name' and 'NAME'.
@@ -186,7 +186,7 @@
     **F. income_>c_analysis.py**
     1. import packages:
       pandas, numpy, seaborn, matplotlib.pyplot
-    2. read 'results.csv' to 'merge'
+    2. read 'results.csv' to 'merge1'
     3. call `np.log()` to ['H/T_GO', 'H/T_GS', 'H/T_PO', 'H/T_PS', 'H/T_G', 'H/T_P', 'H', 'T','H/T']
     4. call `sns.jointplot()`
         argument:
